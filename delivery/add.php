@@ -52,7 +52,7 @@ if (isset($_POST['slip_number']) &&
 <html>
   <head>
     <title>
-    onosystems web manager
+    配達物の追加 - 配way
     </title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">

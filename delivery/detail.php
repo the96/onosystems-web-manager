@@ -76,6 +76,7 @@ if (isset($_GET['slip_number'])) {
 <html>
   <head>
     <title>
+    配達物の詳細 - 配way
     </title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">

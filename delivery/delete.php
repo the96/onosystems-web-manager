@@ -22,7 +22,7 @@ if (isset($_GET['slip_number'])) {
 <html>
   <head>
     <title>
-    onosystems web manager
+    配達物の削除 - 配way
     </title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">

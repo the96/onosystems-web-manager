@@ -8,7 +8,7 @@ $result = post("https://www.onosystems.work/aws/SelectDeliveryTest", body);
 <html>
   <head>
     <title>
-    onosystems web manager
+    配達物一覧 - 配way
     </title>
     <!-- Latest compiled and minified CSS -->
     <!-- Latest compiled and minified CSS -->
