@@ -1,5 +1,5 @@
 <?php
-require_once './func.php';
+require_once '../func.php';
 auth();
 
 if (isset($_GET['slip_number']) &&
@@ -31,19 +31,23 @@ if (isset($_GET['slip_number']) &&
     onosystems web manager
     </title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
 
     <!-- import jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../jquery-3.3.1.min.js"></script>
   </head>
   <body>
+    <?php
+      include '../header.php';
+      write_header("delivery");
+    ?>
     <div style="margin: 2em;">
       <h3 style="margin-left: 1em;">更新結果</h3>
       <?php

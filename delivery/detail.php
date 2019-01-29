@@ -1,5 +1,5 @@
 <?php
-require_once './func.php';
+require_once '../func.php';
 auth();
 
 function get_radio_group ($name, $default) {
@@ -78,20 +78,24 @@ if (isset($_GET['slip_number'])) {
     <title>
     </title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap-theme.min.css">
 
     <!-- import jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../jquery-3.3.1.min.js"></script>
   </head>
   <body>
-  <h3 class="text-center" style="margin-top:1em">配達物の詳細</h3>
+    <?php
+      include '../header.php';
+      write_header("delivery");
+    ?>
+    <h3 class="text-center" style="margin-top:1em">配達物の詳細</h3>
     <form action="update.php?slip_number=<?php print($slip_number);?>" method="post">
       <table class="table">
         <thead>
@@ -114,8 +118,8 @@ if (isset($_GET['slip_number'])) {
         </tbody>
       </table>
       <div class="form-group text-center">
-          <button type="submit" class="btn btn-default">編集確定</button>
-        </div>
+        <button type="submit" class="btn btn-default">編集確定</button>
+      </div>
     </form>
     <div style="padding: 2em 5em;text-align: right">
       <div style="display: inline">
