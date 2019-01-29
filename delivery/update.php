@@ -30,6 +30,7 @@ if (isset($_GET['slip_number']) &&
     <title>
     配達物の状態更新 - 配way
     </title>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"> 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 

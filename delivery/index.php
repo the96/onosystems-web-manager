@@ -10,6 +10,7 @@ $result = post("https://www.onosystems.work/aws/SelectDeliveryTest", body);
     <title>
     配達物一覧 - 配way
     </title>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"> 
     <!-- Latest compiled and minified CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
