@@ -78,7 +78,7 @@ if (isset($_POST['slip_number']) &&
       <?php
         if ($input_validity) {
           if ($result_status) {
-            print("配達物の追加に成功しました。");
+            print("配達物の追加に成功しました。<br />");
             print("<a class='btn' href='detail.php?slip_number=".$slip_number."'>追加した配達物の詳細</a><br />");
             print("<a href='index.php'>一覧画面</a>");
           } else {
