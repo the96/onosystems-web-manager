@@ -71,7 +71,6 @@ if (isset($_POST['name']) &&
           if ($double_check) {
             if ($result_status) {
               print("ドライバーの追加に成功しました。<br />");
-              print("<a class='btn' href='detail.php?driver_id=".$driver_id."'>追加したドライバーの詳細</a><br />");
               print("<a href='index.php'>一覧画面</a>");
             } else {
               print("ドライバーの追加に失敗しました。サーバ側の問題である可能性が高いです。<br />");

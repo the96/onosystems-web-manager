@@ -8,8 +8,9 @@ $result = post("https://www.onosystems.work/aws/SelectCourierTest", body);
 <html>
   <head>
     <title>
-    onosystems web manager
+    ドライバー一覧 - 配way
     </title>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"> 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 
@@ -41,10 +42,9 @@ $result = post("https://www.onosystems.work/aws/SelectCourierTest", body);
           <?php
             $keys = array_keys($result[0]);
             foreach($keys as $key) {
-              print("<td>".$key."</td>");
+              print("<th>".$key."</th>");
             }
           ?>
-          <th>jump</th>
           <th>delete</th>
         </tr>
       </thead>
@@ -57,8 +57,7 @@ $result = post("https://www.onosystems.work/aws/SelectCourierTest", body);
             foreach($keys as $key) {
               print("<td>".$value[$key]."</td>");
             }
-            print("<td><a class='btn btn-info' href='driver/detail.php?driver_id=".$value["driver_id"]."'>詳細</a></td>");
-            print("<td><a class='btn btn-danger' href='driver/delete.php?driver_id=".$value["driver_id"]."' onClick='return dialog();'>削除</a></td>");
+            print("<td><a class='btn btn-danger' href='delete.php?driver_id=".$value["driver_id"]."' onClick='return dialog();'>削除</a></td>");
             print("</tr>");
             $i++;
           }
