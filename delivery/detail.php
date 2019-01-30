@@ -91,6 +91,11 @@ if (isset($_GET['slip_number'])) {
     <!-- Latest compiled and minified JavaScript -->
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
     <script src="../../jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      function dialog(){
+        return confirm("配達物情報を削除しますか？");
+      }
+    </script>
   </head>
   <body>
     <?php
@@ -120,7 +125,8 @@ if (isset($_GET['slip_number'])) {
         </tbody>
       </table>
       <div class="form-group text-center">
-        <button type="submit" class="btn btn-default">編集確定</button>
+        <button type="submit" class="btn btn-default" style="margin: 0 1em">編集確定</button>
+        <a class="btn btn-danger" href="delete.php?slip_number=<?php print($slip_number);?>" onClick="return dialog();" style="margin: 0 1em">削除</a>
       </div>
     </form>
     <div style="padding: 2em 5em;text-align: right">
